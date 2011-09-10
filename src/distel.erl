@@ -21,7 +21,6 @@
                 , foreach/2
                 , keysearch/3
                 , map/2
-                , member/2
                 , prefix/2
                 , reverse/1
                 , sort/1
@@ -1028,7 +1027,7 @@ xref_callgraph(A) ->
     F = to_list(fmt("(XXL)(Lin)(E || ~p)",[A])),
     fun(server)-> distel_call_graph;
        (opts) -> [];
-       (otp) -> false;
+       (otp) -> true;
        (query_)-> F
     end.
 

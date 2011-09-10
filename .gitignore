@@ -1,2 +1,4 @@
 ebin
 elisp/*.elc
+doc/*.info
+.DS_Store
